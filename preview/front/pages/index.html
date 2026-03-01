@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
     <title>Black Paper demo</title>
+    <meta name="description" content="Demo of the BlackPaper desktop environment">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script type="module" src="/static/js/main.js"></script>
   </head>
   <body>
+    <div id="desktop" class="desktop">
+      <div id="corner-tl" class="corner"></div>
+      <div id="corner-tr" class="corner"></div>
+      <div id="corner-br" class="corner"></div>
+      <div id="corner-bl" class="corner"></div>
+
+      <div id="edge-tl" class="edge"></div>
+      <div id="edge-tr" class="edge"></div>
+      <div id="edge-br" class="edge"></div>
+      <div id="edge-bl" class="edge"></div>
+
+      <div id="windows-area" class="windows-area">
+        <div id="background" class="background-layer"></div>
+        <div id="bg" class="bg-layer"></div>
+        <div id="fg" class="fg-layer"></div>
+        <div id="overlay" class="overlay-layer"></div>
+      </div>
+    </div>
   </body>
 </html>
 

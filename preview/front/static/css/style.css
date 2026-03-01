@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+.desktop {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  /* левая грань, контент, правая грань */
+  grid-template-rows: 20px 1fr 20px;
+  /* верхняя грань, контент, нижняя грань */
+}
+
+.wallpapers-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.background-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: black;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: transparent;
+}
+
+.fg-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: transparent;
+}
+
+.overlay-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  background-color: transparent;
+}
